@@ -46,7 +46,7 @@ public class Random : MonoBehaviour
         else
         {
             Debug.Log($"YOU LOSE. The Random number was {randNum}");
-            transform.localScale = Vector3.zero;
+            Destroy(gameObject); //Erase gameobject
         }
 
         return false;
